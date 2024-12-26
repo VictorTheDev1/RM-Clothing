@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#fe9501,#fff);
+  }
+
+  /* Loading Screen Styles */
+  .loading-container {
+    text-align: center;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .logo-image {
+    width: 110px;
+    border-radius: 50%;
+    height: auto;
+  }
+
+  .loader {
+    display: flex;
+    justify-content: center;
+  }
+
+  .loader .dot {
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background-color: #56c0ed; /* Blue Color */
+    border-radius: 50%;
+    animation: bounce 1.2s infinite ease-in-out;
+  }
+
+  .loader .dot:nth-child(1) {
+    animation-delay: -0.3s;
+  }
+
+  .loader .dot:nth-child(2) {
+    animation-delay: -0.15s;
+  }
+
+  .loader .dot:nth-child(3) {
+    animation-delay: 0s;
+  }
+
+  /* Animation for bouncing dots */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+
+  /* Footer */
+  .footer {
+    margin-top: 20px;
+    font-size: 17px;
+    color: #999;
+  }
+
+  .footer .brand {
+    color: #312511ab;
+    font-weight: bold;
+  }
+
+  /* Login/Signup Section */
+  #auth-section {
+    display: none; /* Hidden by default */
+    
+    background-color: antiquewhite 100px;
+    text-align: center;
+  }
+
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .hidden {
+    display: none;
+  }
