@@ -59,6 +59,17 @@ body{
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: var(--weight-400);
+  animation-name: my1animation;
+  animation-duration: 2s;
+position: relative;
+}
+@keyframes my1animation{
+from {
+  top: 100%;
+}
+to{
+  top: 0%;
+}
 }
 
 body{
@@ -308,6 +319,17 @@ input{
   align-items: center;
   padding: 50px;
   background-color: #ffffff;
+  animation-name: myanimation;
+  animation-duration: 2s;
+position: relative;
+}
+@keyframes my2animation{
+from {
+  top: 100%;
+}
+to{
+  top: 0%;
+}
 }
 
 .about-content {
@@ -397,6 +419,17 @@ input{
 .contact-section {
   background-color: #fff;
   padding: 40px 20px;
+  animation-name: my3animation;
+  animation-duration: 2s;
+position: relative;
+}
+@keyframes my3animation{
+from {
+  top: 100%;
+}
+to{
+  top: 0%;
+}
 }
 
 /* Container to hold both form and info */
@@ -522,6 +555,17 @@ margin-bottom: 20px;
 
   border-bottom: 1px solid #7f7e7e;
   padding-block: 0.875rem; 
+  animation-name: my4animation;
+  animation-duration: 2s;
+position: relative;
+}
+@keyframes my4animation{
+from {
+  top: 100%;
+}
+to{
+  top: 0%;
+}
 }
 .footer-cp{
   padding: 20px;

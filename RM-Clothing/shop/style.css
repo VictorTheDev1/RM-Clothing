@@ -14,7 +14,20 @@
     justify-content: center; 
     align-items: center;     
   }
+  body{
+    animation-name: my2animation;
+    animation-duration: 2s;
+  position: relative;
+  }
+  @keyframes my2animation{
+  from {
+    top: 100%;
+  }
+  to{
+    top: 0%;
+  }
   
+  }
   .head {
     display: flex;            
     justify-content: center;  
@@ -205,6 +218,17 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     max-width: 800px;
     margin: 0 auto;
+    animation-name: my3animation;
+    animation-duration: 2s;
+  position: relative;
+  }
+  @keyframes my3animation{
+  from {
+    top: 100%;
+  }
+  to{
+    top: 0%;
+  }
   }
   
   form {
