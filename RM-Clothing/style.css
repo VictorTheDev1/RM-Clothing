@@ -59,17 +59,20 @@ body{
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: var(--weight-400);
-  animation-name: my1animation;
-  animation-duration: 2s;
-position: relative;
+  animation: fadeInUp 1s ease-out forwards;
+  opacity: 0; /* Start hidden */
+  transform: translateY(20px);
 }
-@keyframes my1animation{
-from {
-  top: 100%;
-}
-to{
-  top: 0%;
-}
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 body{

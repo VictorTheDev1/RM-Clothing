@@ -15,19 +15,22 @@
     align-items: center;     
   }
   body{
-    animation-name: my2animation;
-    animation-duration: 2s;
-  position: relative;
-  }
-  @keyframes my2animation{
+    animation: fadeInUp 1s ease-out forwards;
+  opacity: 0; /* Start hidden */
+  transform: translateY(20px);
+}
+/* Animations */
+@keyframes fadeInUp {
   from {
-    top: 100%;
+    opacity: 0;
+    transform: translateY(50px);
   }
-  to{
-    top: 0%;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
+}
   
-  }
   .head {
     display: flex;            
     justify-content: center;  
