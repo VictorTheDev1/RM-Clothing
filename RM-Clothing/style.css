@@ -499,7 +499,7 @@ margin-bottom: 20px;
 /* Styling for contact info section */
 .contact-info {
   flex: 1;
-  padding: 20px;
+  padding: 70px;
   box-shadow: 0 2px 40px rgba(0, 0, 0, 0.1);
   background: linear-gradient(#fe9501,#da920e);
   border-radius: 8px;
@@ -507,38 +507,32 @@ margin-bottom: 20px;
   background-repeat: no-repeat;
 }
 
-.contact-info h3 {
-  margin-bottom: 20px;
-  color: #333;
-  font-size: 35px;
-  font-family: Nunito;
+.contact-info h2 {
+  font-size: 3.2rem;
+  margin-bottom: 15px;
+  font-family: ubuntu;
   text-align: center;
 }
-
 .contact-info p {
-  margin: 10px 0;
+  font-size: 1rem;
+  margin-bottom: 20px;
   color: #fff;
-  font-family: Itim;
-  font-size: 30px;
-  text-align: center;
-  margin-top: 40px;
 }
-.contact-info a {
-  margin: 10px 0;
-  color: #fff;
-  font-family: Itim;
-  font-size: 30px;
-  text-align: center;
-  margin-top: 40px;
-}
-.social-icons a {
-  margin-right: 15px;
-  color: #333;
-  text-decoration: none;
+.contact-info ul {
+  list-style: none;
+  padding: 0;
 }
 
-.social-icons a:hover {
-  color: #5cb85c; /* Change color on hover */
+.contact-info ul li {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+.contact-info ul li a {
+ color: #fff;
+}
+.contact-info ul li strong {
+  font-weight: bold;
+  color: #fff;
 }
 
 /* Responsive styles */
@@ -551,6 +545,13 @@ margin-bottom: 20px;
       margin-right: 0; /* Remove margin on stacked layout */
       margin-bottom: 20px; /* Space between stacked items */
   }
+  .contact-info {
+    padding: 22px;
+  }
+  .contact-info h2 {
+    font-size: 2.1rem;
+  }
+
 }
 
 /*FOOTER*/
@@ -678,10 +679,12 @@ display: none;
 }
 .home__description {
   margin-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 .btn{
   font-size: 17px;
-  margin-left: 10px;
+  margin-left: 10px; 
 }
 .text h2 {
 margin-left: -100px;
@@ -840,9 +843,14 @@ p{
 
 .card img {
   width: 100%;
+  transition: transform 0.3s ease;  
   height: 200px;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
+}
+
+.card img:hover, .card img:active {
+  transform: scale(1.1);        
 }
 
 .card h3 {
@@ -873,7 +881,10 @@ p{
   font-weight: bold;
   color: #333;
 }
-
+.specialize h2{
+  font-size: 50px;
+  font-family: ubuntu;
+}
 .icon a {
   display: inline-block;
   margin: 5px;
@@ -899,6 +910,10 @@ p{
   }
   .home__title{
     font-size: 35px;
+  }
+  .specialize h2{
+    font-size: 50px;
+    font-family: ubuntu;
   }
 }
 .fo{
